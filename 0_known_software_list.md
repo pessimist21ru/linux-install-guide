@@ -35,11 +35,11 @@ sudo [command]
 ```bash
 su - # если при установке был указан пароль `root`
 usermod -aG sudo $USER # если пароль `root` не был указан
-                             # выполнение команды не требуется
+                       # выполнение команды не требуется
 ```
 
   После выполнения команды система запросит пароль пользователя `root` и
-включит пользователя `[user_name]` в список с доступом к выполнению команд
+включит пользователя `$USER` в список с доступом к выполнению команд
 через `sudo`.
   Если при установке системы пароль суперпользователя `root` не был указан
 то можно его установить командой:
@@ -50,7 +50,7 @@ sudo passwd root
 
   Но включать пароль `root` в Linux Debian считается избыточным и для
 работы в сеансе суперпользователя вместо `su -` (как это принято в rpm ветке)
-было принято более альтернативное решение:
+было принято альтернативное решение:
 
 ```bash
 sudo -i
@@ -334,15 +334,9 @@ sudo apt-get autoremove
 //`deluge` - торрент-клиент  
 `amule` - DC-клиент  
 //`pidgin` - ICQ-клиент  
-`telegram` - клиент обмена сообщениями, установка из flatpak  
 `max` - российский клиент обмена сообщениями, установка из файла с сайта  
 `vlc` - один из лучших видеопроигрователей  
 `elisa`- музыкальный проигрывать для KDE Plasma от сообщества  
-`flatseal` - графический редактор прав (Offload Render для дискретной графики
-             всё равно настраивается только через терминал... Но можно
-             подглядеть основные параметры)  
-`kicad` - САПР-электроники  
-`SuperTux` - крутой клон Mario с пингвинчиком Такс  
 
 ```bash
 sudo apt-get install firefox-esr firefox-esr-l10n-ru thunderbird \
@@ -350,6 +344,18 @@ thunderbird-l10n-ru ktorrent \
 vlc elisa \
 amule # если нужен DC-клиент
 ```
+
+  Установка мессенджера `max` требует добавления репозитория разработчиков
+к источникам приложений и устанавливается командой:
+
+```bash
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.max.ru/linux/deb/public.asc | sudo gpg --dearmor -o /etc/apt/keyrings/max.gpg >/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/max.gpg] https://download.max.ru/linux/deb stable main" | sudo tee /etc/apt/sources.list.d/max.list
+sudo apt update
+sudo apt install max
+```
+
 
 
 # Flatpak - система распространения приложений linux
@@ -362,6 +368,13 @@ amule # если нужен DC-клиент
 производить от текущего пользователя, а не использовать учётную запись `root`
 (`su -`) или установку с правами суперпользователя (`sudo`).
 
+`flatseal` - графический редактор прав (Offload Render для дискретной графики
+             всё равно настраивается только через терминал... Но можно
+             подглядеть основные параметры)  
+`kicad` - САПР-электроники  
+`SuperTux` - крутой клон Mario с пингвинчиком Такс  
+//`telegram` - клиент обмена сообщениями, установка из flatpak  
+
 ```bash
 sudo apt-get install flatpak -y
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -372,7 +385,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 * Установка Telegram (уже не актуально и не нужно):
 
 ```bash
-flatpak install flathub telegram # а лучше не ставим
+# flatpak install flathub telegram # а лучше не ставим
 ```
 
 выбираем стабильную не веб-версию (2)  
@@ -444,13 +457,13 @@ sudo apt-get install freecad inkscape gimp audacity kdenlive blender
 
 [Статья на habr по эмуляторам](https://habr.com/ru/articles/369599/)
 
-dosbox - эмулятор ОС DOS  
-fuse - эмулятор ZX Spectrum  
-fceux - эмулятор NES/Dendy. В Debian доступен в репозитории unstable (sid).  
-nestopia - эмулятор NES/Dendy. В Debian доступен в репозитории unstable (sid).  
-retroarch - RetroArch сам по себе не эмулирует игры, но работает с библиотекой
+`dosbox` - эмулятор ОС DOS  
+`fuse` - эмулятор ZX Spectrum  
+`fceux` - эмулятор NES/Dendy. В Debian доступен в репозитории unstable (sid).  
+`nestopia` - эмулятор NES/Dendy. В Debian доступен в репозитории unstable (sid).  
+`retroarch` - RetroArch сам по себе не эмулирует игры, но работает с библиотекой
     `libretro`, которая включает ядра для разных консолей.  
-//pcsx2 - эмулятор Playstation 2.  
+//`pcsx2` - эмулятор Playstation 2.  
 
 ```bash
 sudo apt-get install fuse-emulator-common fuse-emulator-sdl spectrum-roms \
