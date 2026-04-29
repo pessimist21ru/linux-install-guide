@@ -15,7 +15,7 @@
 
 - 🖥️ **У вас такой же ноутбук** (Clevo/Hasee) — берите всё готовое: управление вентиляторами ([отдельный репозиторий](https://github.com/pessimist21ru/clevo-fan-control)), драйверы, настройки
 - 🎮 **У вас гибридная графика Intel + Nvidia в Debian** — смотрите разделы [98](98_start_apps_on_nvidia.md) и [99](99_nvidia_in_flatpak.md)
-- 🔧 **Вы инженер-электронщик, переходящий на Linux** — тут есть KiCad, Qucs-s, toolchain для STM32, CubeMX
+- 🔧 **Вы инженер-схемотехник, переходящий на Linux** — тут есть KiCad, Qucs-s, toolchain для STM32, CubeMX
 - 🎨 **Вам интересно, как настроить красивый bash и neovim** — добро пожаловать в разделы [1](1_bash_cfg.md) и [2](2_nvim_install.md)
 - 🕹️ **Хотите эмуляторы ретро-консолей** — ZX Spectrum, NES, Amiga уже настроены в [96](96_install_emulators.md)
 
@@ -36,13 +36,13 @@
 | [4_arm_toolchain_install.md](4_arm_toolchain_install.md) | Установка ARM toolchain для STM32 |
 | [5_cubemx_install.md](5_cubemx_install.md) | Установка STM32CubeMX |
 | [6_Qucs-s_install.md](6_Qucs-s_install.md) | Установка Qucs-s (моделирование электронных схем) |
-| [94_debian_install.md](94_debian_install.md) | Установка Debian 13 с LXDE на нетбук |
-| [95_Netboot_Atom_LXDE.md](95_Netboot_Atom_LXDE.md) | Настройка менеджера питания и bluetooth |
-| [96_install_emulators.md](96_install_emulators.md) | Установка эмуляторов (ZX Spectrum, NES, Amiga) |
-| [97_install_drivers.md](97_install_drivers.md) | Драйверы Nvidia и clevo-fan-control |
-| [98_start_apps_on_nvidia.md](98_start_apps_on_nvidia.md) | Запуск приложений на дискретной видеокарте Nvidia |
-| [99_nvidia_in_flatpak.md](99_nvidia_in_flatpak.md) | Flatpak-приложения на Nvidia (Offload Render) |
-| [100_test_stm32_guide.md](100_test_stm32_guide.md) | Полный стек для разработки под STM32 |
+| [94_debian_install.md](93_debian_install.md) | Установка Debian 13 с LXDE на нетбук |
+| [95_Netboot_Atom_LXDE.md](94_Netboot_Atom_LXDE.md) | Настройка менеджера питания и bluetooth |
+| [96_install_emulators.md](95_install_emulators.md) | Установка эмуляторов (ZX Spectrum, NES, Amiga) |
+| [97_install_drivers.md](96_install_drivers.md) | Драйверы Nvidia и clevo-fan-control |
+| [98_start_apps_on_nvidia.md](97_start_apps_on_nvidia.md) | Запуск приложений на дискретной видеокарте Nvidia |
+| [99_nvidia_in_flatpak.md](98_nvidia_in_flatpak.md) | Flatpak-приложения на Nvidia (Offload Render) |
+| [100_test_stm32_guide.md](99_test_stm32_guide.md) | Полный стек для разработки под STM32 |
 
 ### Дополнительные файлы:
 
