@@ -147,10 +147,10 @@ groups $USER
 # nvidia-resume.service
 ```
 
-[## Настройка запуска приложений на дискретной видеокарте NVIDIA](98_start_apps_on_nvidia)
+[## Настройка запуска приложений на дискретной видеокарте NVIDIA](98_start_apps_on_nvidia.md)
 
 
-[## Настройка запуска приложений Flatpak на дискретной видеокарте NVIDIA](99_nvidia_in_flatpak)
+[## Настройка запуска приложений Flatpak на дискретной видеокарте NVIDIA](99_nvidia_in_flatpak.md)
 
 
 ## Установка clevo-fan-control и драйверов tuxedo:
