@@ -31,7 +31,7 @@
 |------|----------|
 | [0_known_software_list.md](0_known_software_list.md) | Полный список ПО, базовая настройка системы |
 | [1_bash_cfg.md](1_bash_cfg.md) | Цветовая палитра консоли, алиасы, `.bashrc` |
-| [2_nvim_install.md](2_nvim_install.md) | Установка и настройка neovim (с историей love story автора к vim) |
+| [2_nvim_install.md](2_nvim_install.md) | Установка и настройка neovim |
 | [3_vscode_install.md](3_vscode_install.md) | Установка Visual Studio Code |
 | [4_arm_toolchain_install.md](4_arm_toolchain_install.md) | Установка ARM toolchain для STM32 |
 | [5_cubemx_install.md](5_cubemx_install.md) | Установка STM32CubeMX |
