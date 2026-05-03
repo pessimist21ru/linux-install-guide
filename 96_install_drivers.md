@@ -1,7 +1,8 @@
 # **Включение sudo**
 
 ```bash
-usermod -aG sudo pilat
+su -
+usermod -aG sudo $USER
 ```
 
 # **Установка драйвера nvidia и заголовочных файлов ядра**
@@ -24,6 +25,7 @@ sudo apt update
 # nvidia-detect
 sudo apt install nvidia-driver firmware-misc-nonfree
 nvidia-smi
+sudo usermod -a -G video,render $USER
 ```
 
 ```bash

@@ -314,13 +314,25 @@ rm -rf ~/.config/akonadi ~/.local/share/akonadi ~/.cache/akonadi
     (Advanced Package Tool), используемой в дистрибутивах на базе
     Debian (Ubuntu, Linux Mint, Debian и др.)  
 `mesa-utils` - набор утилит для проверки работы 3D-графики  
+`cryptsetup`, `libblockdev-crypto3` - дополнения для диспетчера разделов от KDE
+`plasma-vault` - это утилита для создания зашифрованных хранилищ (vaults)  
+    файлов и папок.   
+`udisks2`, `lvm2` - утилиты для работы с дисками
+`encfs` - дополнение для plasma-vault с методом шифрования encfs  
+`gnome-disk-utility` - утилита для работы с дисками от команды Gnome  
+`krusader` - двух панельный файловый менеджер
 
 ```bash
 sudo apt-get install htop mc neovim git wget curl inxi hardinfo2 neowofetch \
 synaptic mesa-utils -y
 sudo apt-get remove imagemagick* -y
 sudo apt-get install cmake ninja-build openocd -y
-sudo apt-get autoremove
+sudo apt-get install cryptsetup libblockdev-crypto3 plasma-vault -y
+sudo apt-get install udisks2* lvm2* encfs gnome-disk-utility -y
+# krusader и утилиты для него
+sudo apt-get install krusader kdiff3 kompare xxdiff krename locate kget \
+             arj lhasa rar unace unrar -y 
+# пути до `arj` и `unarj` одинаковы, вместо `lha` вписываем `lhasa`
 ```
 
 
@@ -329,7 +341,7 @@ sudo apt-get autoremove
 
 `firefox` - стандартный браузер  
 `thunderbird` - почтовый клиент  
-`transmission` - торрент-клиент  
+//`transmission` - торрент-клиент  
 `ktorrent` - торрент-клиент  
 //`deluge` - торрент-клиент  
 `amule` - DC-клиент  
@@ -339,9 +351,9 @@ sudo apt-get autoremove
 `elisa`- музыкальный проигрывать для KDE Plasma от сообщества  
 
 ```bash
-sudo apt-get install firefox-esr firefox-esr-l10n-ru thunderbird \
-thunderbird-l10n-ru ktorrent \
-vlc elisa \
+sudo apt-get install firefox-esr firefox-esr-l10n-ru \
+thunderbird thunderbird-l10n-ru \
+ktorrent vlc elisa \
 amule # если нужен DC-клиент
 ```
 
