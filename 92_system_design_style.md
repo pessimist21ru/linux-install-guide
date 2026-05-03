@@ -45,7 +45,7 @@ Apple.
 *   **Доработка:** Шрифт виджета часов изменён на
         `Noto Sans ExtraCondensed Medium 10`.
 *   **Сравнение с аналогами:** Тема от `3ximus`
-        ([GitHub / 3ximus/gruvbox-plasma](https://github.com/3ximus/gruvbox-plasma))
+        ([GitHub](https://github.com/3ximus/gruvbox-plasma))
         более контрастная и имеет лишние цветовые блоки. Версия `adhe`
         выбрана за гармоничность и лаконичность.
 
@@ -61,7 +61,7 @@ Apple.
 *   **Тема:** `Gruvbox Plus Icon Theme Pack`
 *   **Автор:** `eleuth`
 *   **Способ установки:** Скачать архив с
-        [KDE Store / p/1961046](https://store.kde.org/p/1961046)
+        [KDE Store](https://store.kde.org/p/1961046)
         или найти через «Загрузить наборы значков...» и распаковать в `$HOME/.local/share/icons/`.
 *   **Комментарий:** Превосходит тему от `adhe` по количеству
         отрисованных значков и общему качеству прорисовки.
@@ -70,7 +70,7 @@ Apple.
 *   **Тема:** `Bibata-Modern-Amber`
 *   **Автор:** `ful1e5`
 *   **Способ установки:** Скачать с
-        [GitHub / ful1e5/Bibata_Cursor](https://github.com/ful1e5/Bibata_Cursor)
+        [GitHub](https://github.com/ful1e5/Bibata_Cursor)
         и распаковать в `$HOME/.local/.icons/`.
 *   **Действие:** Выбрать тему в разделе «Курсоры».
 
