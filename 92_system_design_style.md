@@ -1,7 +1,8 @@
 # Системное оформление: тема Gruvbox
 
   Создаём свое комфортное, не утомляющее глаза окружение, выдержанное в единой
-палитре темы оформления, вдохновлённой
+палитре темы оформления, вдохновлённой темой `Gruvbox` из операционной системы
+Apple.
 
 ## Базовая информация
 
@@ -38,7 +39,7 @@
 *   **Тема:** `GruvboxPlasma`
 *   **Автор:** `adhe`
 *   **Способ установки:** Ручной. Скачать архив с
-        [KDE Store / p/1327719](https://store.kde.org/p/1327719)
+        [KDE Store](https://store.kde.org/p/1327719)
         и распаковать в `$HOME/.local/share/plasma/desktoptheme/`.
 *   **Действие:** Выбрать тему в списке.
 *   **Доработка:** Шрифт виджета часов изменён на
@@ -52,7 +53,7 @@
 *   **Тема:** `GruvboxAurorae`
 *   **Автор:** `adhe`
 *   **Способ установки:** Скачать архив
-        [KDE Store / p/1327718](https://store.kde.org/p/1327718/)
+        [KDE Store](https://store.kde.org/p/1327718/)
         и распаковать в `$HOME/.local/share/aurorae/themes/`.
 *   **Действие:** Выбрать тему в разделе «Оформление окон».
 
@@ -81,15 +82,12 @@
 ### 9. Заставка (Splash Screen)
 *   **Тема:** Одна из `QuarksSplash` (выбрана за минималистичный дизайн).
 *   **Авторы и варианты:**
-        `QuarksSplashLight` от `adhe`:
-            [KDE Store / p/1304258](https://store.kde.org/p/1304258)
-            — светлый вариант.
+    *   `QuarksSplashLight` от `adhe`:
+            [Светлый вариант](https://store.kde.org/p/1304258).
     *   `QuarksSplashDark` от `adhe`:
-            [KDE Store / p/1304256](https://store.kde.org/p/1304256)
-    *       — тёмный вариант.
+            [Тёмный вариант](https://store.kde.org/p/1304256).
     *   `QuarksSplashDarker` от `igflavius`:
-            [KDE Store / p/1401423](https://store.kde.org/p/1401423)
-            — ещё более тёмный вариант.
+            [Ещё более тёмный вариант](https://store.kde.org/p/1401423).
 *   **Способ установки:** Распаковать архив в
         `$HOME/.local/share/plasma/look-and-feel/`, заменив файл
         `metadata.desktop` на `metadata.json` (необходимо для Plasma 6).
